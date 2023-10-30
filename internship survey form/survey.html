@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnToCode Internship Application</title>
+    <link rel="stylesheet" href="survey_style.css">
+</head>
+<body style="justify-self: center; background-color : #f4f4f4">
+    <div class="container">
+        <div class="header">
+            <h1><i>LearnToCode Internship</i><br><h4>Fill In The Details To apply For The Internship</h4></h1>
+        </div><br><br>
+        <form>
+            <div class="input-container">
+                <div class="input-field">
+                    <label for="firstName">First Name<span id = "col">*</span></label><br>
+                    <input type="text" id="firstName" name="firstName" required placeholder="Enter First Name">
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-field">
+                    <label for="lastName">Last Name<span id = "col">*</span></label><br>
+                    <input type="text" id="lastName" name="lastName" required placeholder="Enter Last Name">
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-field">
+                    <label for="age">Age</label><br>
+                    <input type="number" id="age" name="age" required placeholder="Enter Age">
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-field">
+                    <label for="email">Email<span id = "col">*</span></label><br>
+                    <input type="text" id="email" name="email" required placeholder="Enter Email Id">
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-field">
+                    <label for="branch">Branch<span id = "col">*</span></label><br>
+                    <input type="text" id="branch" name="branch" required placeholder="Enter Your Branch">
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-field">
+                    <label for="occupation">Occupation<span id = "col">*</span></label><br>
+                    <select id="occupation" name="occupation" required>
+                        <option value="student">Student</option>
+                        <option value="employed">Employed(Professional)</option>
+                        <option value="fresher">Fresher</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-field">
+                    <label for="experience">Experience</label><br>
+                    <select id="experience" name="experience" required>
+                        <option value="junior">Junior</option>
+                        <option value="midlevel">Midlevel</option>
+                        <option value="senior">Senior</option>
+                        <option value="executive">Executive</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-field-radio">
+                    <label>Field of Interest<span id = "col">*</span></label><br>
+                    <label class="radio-label"><input type="radio" name="interest" value="webDev"> Web Development</label><br>
+                    <label class="radio-label"><input type="radio" name="interest" value="dataScience"> Data Science</label><br>
+                    <label class="radio-label"><input type="radio" name="interest" value="machinelearning"> Machine Learning</label><br>
+                    <label class="radio-label"><input type="radio" name="interest" value="cybersecurity"> Cyber Security</label><br>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-field">
+                    <label for="resume">Upload Resume<span id = "col">*</span></label><br>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-field">
+                    <label for="linkedin">LinkedIn URL</label><br>
+                    <input type="text" id="linkedin" name="linkedin" required placeholder="Enter LinkedIn URL">
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button type="button" class="wave" onclick="window.location.href='response.html'">Submit</button>
+            </div>
+            
+            
+        </form>
+    </div>
+    <footer style="text-align: center; color: #000; padding: 10px;">
+        &copy; 2023 LearnToCode. All Rights Reserved.
+    </footer>
+</body>
+</html>

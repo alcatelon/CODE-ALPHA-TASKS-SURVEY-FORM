@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0cfea;
+    text-align: center;
+}
+
+.success-container {
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+    font-size: 37px;
+    font-weight: bold;
+    color: #8a2be2;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #8a2be2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.top{
+    background-color: #8a2be2;
+    
+}

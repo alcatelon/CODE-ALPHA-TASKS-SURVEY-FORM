@@ -1,0 +1,129 @@
+.container {
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);*/
+    width: 1000px;
+    margin-left: 12rem;
+}
+
+.header {
+    text-align: left;
+    color: #ffffff;
+    background-color: #8a2be2;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin: -3px -3px 3px -px;
+    height: 120px;
+}
+
+.header h1 {
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+
+.input-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.input-field input, .input-field select{
+    width: calc(100% - 30px);
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.input-field input:focus, .input-field select:focus {
+    border-color: #8a2be2;
+}
+
+.button-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.wave {
+    position: relative;
+    background-color: #8a2be2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 60%;
+    margin-left: 210px;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.wave::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    opacity: 0;
+    transform: scale(0);
+}
+
+.wave:hover::before {
+    animation: wave 0.8s ease-out forwards, lightning 0.5s linear;
+}
+
+@keyframes wave {
+    to {
+        opacity: 0.3;
+        transform: scale(3);
+    }
+}
+
+@keyframes lightning {
+    50% {
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+    }
+}
+
+
+
+.radio-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-field select {
+    width: 100%;
+}
+input[type=text],
+input[type = number] {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: gray;
+}
+.input-field input:focus::before, .input-field select:focus::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #8a2be2;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+#col{
+    color : red;
+}
